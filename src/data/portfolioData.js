@@ -10,7 +10,7 @@ export const portfolioData = {
   education: {
     degree: "Bachelor of Computer Applications (BCA)",
     university: "Indus University, Ahmedabad",
-    duration: "2024 - 2025 (Expected)",
+    duration: "2021 - 2024 ",
     courses: ["Web Development", "Data Structures", "Computer Networks", "Operating Systems"]
   },
   skills: {
