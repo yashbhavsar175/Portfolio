@@ -16,9 +16,6 @@ const About = ({ portfolioData }) => {
             <p className="text-sm text-purple-400">{portfolioData.education.duration}</p>
           </div>
         </div>
-        <div className="mt-8 text-center">
-          <ResumeButton className="text-lg py-3 px-6" />
-        </div>
       </div>
     </Section>
   );
