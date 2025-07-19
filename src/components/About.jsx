@@ -1,6 +1,7 @@
 import React from 'react';
 import { GraduationCap } from 'lucide-react';
 import Section from './Section';
+import ResumeButton from './ResumeButton';
 
 const About = ({ portfolioData }) => {
   return (
@@ -14,6 +15,9 @@ const About = ({ portfolioData }) => {
             <p className="text-gray-400">{portfolioData.education.university}</p>
             <p className="text-sm text-purple-400">{portfolioData.education.duration}</p>
           </div>
+        </div>
+        <div className="mt-8 text-center">
+          <ResumeButton className="text-lg py-3 px-6" />
         </div>
       </div>
     </Section>

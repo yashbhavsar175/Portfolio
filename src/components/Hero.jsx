@@ -1,6 +1,7 @@
 import React from 'react';
 import { Linkedin, Github } from 'lucide-react';
 import EmailButton from './EmailButton';
+import ResumeButton from './ResumeButton';
 
 const Hero = ({ portfolioData }) => {
   return (
@@ -10,10 +11,13 @@ const Hero = ({ portfolioData }) => {
           Hi, I'm <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-500">{portfolioData.name}</span>
         </h1>
         <p className="text-xl md:text-2xl text-gray-300 mb-8">{portfolioData.title}</p>
-        <div className="flex justify-center space-x-6">
-          <a href={portfolioData.linkedin} target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-purple-400 transition-colors duration-300"><Linkedin size={28} /></a>
-          <a href={portfolioData.github} target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-purple-400 transition-colors duration-300"><Github size={28} /></a>
-          <EmailButton email={portfolioData.email} />
+        <div className="flex flex-col items-center space-y-6">
+          <div className="flex justify-center space-x-6">
+            <a href={portfolioData.linkedin} target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-purple-400 transition-colors duration-300"><Linkedin size={28} /></a>
+            <a href={portfolioData.github} target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-purple-400 transition-colors duration-300"><Github size={28} /></a>
+            <EmailButton email={portfolioData.email} />
+          </div>
+          <ResumeButton />
         </div>
       </div>
     </section>
